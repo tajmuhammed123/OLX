@@ -27,9 +27,9 @@ function View() {
       <div className="rightSection">
         <div className="productDetails">
           <p>&#x20B9; {postDetails.price} </p>
-          <span>YAMAHA R15V3</span>
-          <p>Two Wheeler</p>
-          <span>Tue May 04 2021</span>
+          <span>{postDetails.name}</span>
+          <p>{postDetails.category}</p>
+          <span>{postDetails.createdAt}</span>
         </div>
         {userDetails && <div className="contactDetails">
           <p>Seller details</p>
